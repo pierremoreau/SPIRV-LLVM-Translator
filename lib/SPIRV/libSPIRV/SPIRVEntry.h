@@ -702,7 +702,7 @@ public:
   SPIRVCapability() : Kind(CapabilityMatrix) {}
   _SPIRV_DCL_ENCDEC
 
-  SPIRVWord getRequiredSPIRVVersion() const override {
+    SPIRVWord getRequiredSPIRVVersion() const {
     switch (Kind) {
     case CapabilityNamedBarrier:
     case CapabilitySubgroupDispatch:
